@@ -1,13 +1,13 @@
 # Lightning Template
 
 ```
-copper_train --help
+gold_train --help
 ```
 
 examples
 
-- `copper_train data.num_workers=16`
-- `copper_train data.num_workers=16 trainer.deterministic=True +trainer.fast_dev_run=True`
+- `gold_train data.num_workers=16`
+- `gold_train data.num_workers=16 trainer.deterministic=True +trainer.fast_dev_run=True`
 
 ### Cat vs Dog with ViT
 
@@ -16,17 +16,17 @@ find . -type f -empty -print -delete
 ```
 
 ```
-copper_train experiment=cat_dog data.num_workers=16 +trainer.fast_dev_run=True
+gold_train experiment=cat_dog data.num_workers=16 +trainer.fast_dev_run=True
 ```
 
 ```
-copper_train experiment=cat_dog data.num_workers=16
+gold_train experiment=cat_dog data.num_workers=16
 ```
 
 ## Multi Run
 
 ```
-copper_train -m hydra/launcher=joblib hydra.launcher.n_jobs=4 experiment=mnist data.batch_size=8,16,32,64 data.num_workers=0
+gold_train -m hydra/launcher=joblib hydra.launcher.n_jobs=4 experiment=mnist data.batch_size=8,16,32,64 data.num_workers=0
 ```
 
 ## Development
