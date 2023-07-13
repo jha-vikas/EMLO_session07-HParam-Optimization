@@ -14,7 +14,7 @@ defaults:
 
   # experiment configs allow for version control of specific hyperparameters
   # e.g. best hyperparameters for given model and datamodule
-  - experiment: null
+  - experiment: HP.yaml
 
    # config for hyperparameter optimization
   - hparams_search: HP_optuna.yaml
