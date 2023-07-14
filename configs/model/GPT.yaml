@@ -1,6 +1,6 @@
 _target_: gold.models.GPT_module.GPTLitModule
 
-learning_rate: 1.0e-3
+learning_rate: 3.0e-4
 n_embed: 16
 block_size: ${data.block_size}
 n_heads: 2
