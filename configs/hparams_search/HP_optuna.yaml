@@ -47,6 +47,6 @@ hydra:
     params:
       data.block_size: choice(2, 4, 8, 16)
       model.n_embed: choice(16, 32, 64, 128)
-      model.n_heads: choice(2, 4, 8, 12)
+      model.n_heads: choice(2, 4, 8, 16)
       model.drop_p: choice(0.0, 0.01, 0.02, 0.04)
       model.n_decoder_blocks: choice(1, 2, 4, 8)
