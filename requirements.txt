@@ -33,3 +33,5 @@ rich            # beautiful text formatting in terminal
 pytest          # tests
 black
 # sh            # for running bash commands in some tests (linux/macos only)
+
+tiktoken==0.4.0 # to convert text to bits
